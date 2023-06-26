@@ -6,7 +6,7 @@ document.querySelector("#hamburger-menu").onclick = () => {
   navbarNav.classList.toggle("active");
 };
 
-// Agar hamburger menu hilang saat diklik diluar
+// Agar hamburger menu hilang saat diklik diluar sidebar
 const hamburger = document.querySelector("#hamburger-menu");
 
 document.addEventListener("click", function (e) {

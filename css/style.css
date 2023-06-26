@@ -78,7 +78,7 @@ body {
   padding: 0;
 }
 .password-box {
-  width: 350px;
+  width: 310px;
   padding: 2rem;
   border: 0.1rem solid #ccc;
   border-radius: 0.4rem;
@@ -157,14 +157,6 @@ body {
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
-  }
-
-  .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
-  }
-
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
   }
 }
 
