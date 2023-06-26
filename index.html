@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar-->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">random<span>pass</span></a>
+      <div class="navbar-nav" id="navbar-container">
+        <a href="#home" onclick="window.location.reload()">Reload</a>
+        <a href="#about" onclick="aboutWebsite()">About Website</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a
+          href="https://github.com/achfaisal/tugas-individu-kedua"
+          id="github"
+          target="_blank"
+          ><i data-feather="github"></i
+        ></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Form section -->
+    <div class="container-password">
+      <div class="password-box">
+        <h2 class="password-header">Password Generator</h2>
+        <input
+          id="passwordLength"
+          type="number"
+          min="0"
+          placeholder="Masukkan panjang password (maks 50)"
+        /><br />
+        <input
+          id="password"
+          type="text"
+          placeholder="Password"
+          readonly
+        /><br />
+        <button onclick="getPassword()">Generate Password</button>
+      </div>
+    </div>
+
+    <!-- Feather Icons JS -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
